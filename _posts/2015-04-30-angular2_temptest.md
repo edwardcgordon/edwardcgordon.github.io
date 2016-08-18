@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Angular2 is a tempest we should all embrace
+excerpt: This is a test excerpt to see what it looks like...
 ---
 
 ## 2015 will be the year of AngularJS 2.0 and it’s going to be awesome.
