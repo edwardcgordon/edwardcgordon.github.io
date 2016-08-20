@@ -10,6 +10,16 @@
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
+/* Variables     */
+/**************/
+
+$sidebar: #4d6571;
+$title_color: #ffeb3b;
+$header_font: 'Roboto Slab', serif;
+$body_font: 'Roboto', serif;
+$highlight_color
+
+/**************/
 /* BASE RULES */
 /**************/
 
@@ -19,7 +29,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: $body_font;
   color: $darkGray;
 }
 
@@ -32,24 +42,27 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
+  font-family: $header_font;
   font-weight: bold;
 
-  line-height: 1.7;
+  /*--line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
-
+  --*/
   @include mobile {
     line-height: 1.4;
   }
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 2em;
   a {
     color: inherit;
   }
+}
+
+.posts.h1 {
+  margin: 0 0 0.4em 0;
 }
 
 h2 {
@@ -147,10 +160,6 @@ img {
 /* LAYOUT / SECTIONS */
 /*********************/
 
-//
-// .masthead
-//
-
 .content {
   position: relative;
 }
@@ -160,17 +169,21 @@ img {
   height: 100%;
   width: 25%;
   text-align: center;
-  background: #4d6571;
+  background: $sidebar;
 
   @include mobile {
     position: static;
     height: auto;
     width: 100%;
     text-align: center;
-    background: #4d6571;
+    background: $sidebar;
     padding: 4% 0;
     margin: auto;
   }
+}
+
+.blog-header h1 {
+  color: $title_color;
 }
 
 .main-content {
@@ -265,13 +278,29 @@ nav {
 // .main
 //
 
+.blog-header {
+  margin-top: 70%;
+
+  @include mobile {
+    margin: auto;
+  }
+}
+
+.posts {
+  border-style: solid;
+  border-color: $sidebar;
+  border-width: 0 0 0 10px;
+  margin: 5% 0;
+  padding-left: 1em;
+}
+
 .posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  margin-bottom: 2em;
+  padding: 0;
 }
 
 .posts > .post:last-child {
-  padding-bottom: 1em;
+  padding-bottom: 0;
   border-bottom: none;
 }
 
