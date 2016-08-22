@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HTML, CSS, JavaScript. No Bootstrap.
-excerpt: This is a test excerpt to see what it looks like...
+excerpt: The goals of this blog, and a mission statement of sorts.
 comments: true
 ---
 
