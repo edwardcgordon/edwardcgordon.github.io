@@ -275,6 +275,17 @@ img {
   margin-bottom: 1em;
   font-size: 3em;
   border-bottom: $sidebar solid;
+  color: #37474f;
+}
+
+.post.main h1 {
+  margin: 0.25em 0;
+  font-size: 2em;
+  border: none;
+}
+
+.entry {
+  margin-bottom: 0.25em;
 }
 
 .post h2 {
