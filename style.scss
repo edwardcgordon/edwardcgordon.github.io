@@ -15,9 +15,10 @@
 
 $sidebar: #4d6571;
 $title_color: #ffeb3b;
+$highlight_color: #ffeb3b;
+$link_color: #e91e63;
 $header_font: 'Roboto Slab', serif;
 $body_font: 'Roboto', serif;
-$highlight_color
 
 /**************/
 /* BASE RULES */
@@ -61,8 +62,8 @@ h1 {
   }
 }
 
-.posts.h1 {
-  margin: 0 0 0.4em 0;
+.post.h1 {
+  margin: 0 0 0.4em 1em;
 }
 
 h2 {
@@ -79,17 +80,21 @@ h4 {
 }
 
 p {
-  margin: 15px 0;
+  margin: 2% 0;
+  line-height: 1.5em;
 }
 
 a {
-  color: $blue;
+  color: $link_color;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $link_color;
+    border-color: $link_color;
   }
 }
+
+
 
 ul, ol {
   margin: 15px 0;
@@ -176,14 +181,10 @@ img {
     height: auto;
     width: 100%;
     text-align: center;
-    background: $sidebar;
+    background: #4d6571;
     padding: 4% 0;
     margin: auto;
   }
-}
-
-.blog-header h1 {
-  color: $title_color;
 }
 
 .main-content {
@@ -247,56 +248,72 @@ img {
   }
 }
 
-nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
 
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
-
-  a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
-
-    @include mobile {
-      margin: 0 10px;
-      color: $blue;
-    }
-  }
-}
 
 //
 // .main
 //
 
+.blog-header h1 {
+  margin-right: 0.2em;
+  font-size: 1.5em;
+}
+
 .blog-header {
   margin-top: 70%;
+  color: $title_color;
+  display: inline-flex;
+  flex-direction: column;
 
   @include mobile {
     margin: auto;
+    flex-direction: row;
+  }
+  }
+
+.post h1 {
+  margin-bottom: 1em;
+  font-size: 3em;
+  border-bottom: $sidebar solid;
+}
+
+.post h2 {
+  color: $link_color;
+  margin-top: 5%;
+}
+
+.post {
+  margin: 5% 0;
+  padding-left: 1em;
+  padding-left: 1em;
+  font-family: Roboto, serif;
+  margin: 5% 15%;
+
+  @include mobile {
+    margin: 2% 2.5%;
+    }
+
+  }
+
+.post.main {
+  border-style: solid;
+  border-color: $sidebar;
+  border-width: 0 0 0 10px;
+  margin: 5% 0;
+  padding-left: 1em;
+
+  &:hover {
+    border-color: $link_color;
   }
 }
 
 .posts {
-  border-style: solid;
-  border-color: $sidebar;
-  border-width: 0 0 0 10px;
   margin: 5% 0;
   padding-left: 1em;
 }
 
 .posts > .post {
   margin-bottom: 2em;
-  padding: 0;
 }
 
 .posts > .post:last-child {
@@ -324,6 +341,9 @@ nav {
   }
 }
 
+/*-- Blog post page --*/
+
+
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
@@ -335,7 +355,6 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
-
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
