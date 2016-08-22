@@ -12,4 +12,4 @@ This is a brief look at how to make a progress bar in HTML and CSS only. I didn'
 All of the stuff I've half-read (no one reads a full book) about development all come down to a simple maxim. Do the easy things first. For me, this was to create an empty "bar", and completely fill it.
 So I created an empty section, "progress-bar", and give it a background color. Add some padding to that, and you get a passable "bar" type thing. Once you add in a border, it doesn't look too bad.
 
-![progress-bar-full]({{site.url}}/images/404.jpg)
+![progress-bar-full](/images/404.jpg)
