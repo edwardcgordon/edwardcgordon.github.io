@@ -24,7 +24,7 @@ Progress bars are rarely full. After all, they indicate progress, not achievemen
 
 At first, I couldn't get it to stop fading like a 1990's shell suit top. But I changed the % values until it worked. Here it is.
 
-![progress-bar-half](/images/progress-bar-half.PNG)
+![progress-bar-half](/images/progress-bar-half.png)
 
 And you can see the gradient rule at the end:
 
