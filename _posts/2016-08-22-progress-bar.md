@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating a Progress Bar. Without Bootstrap
+title: The Long March of Progress
 excerpt: How to make a progress bar with just HTML, CSS and hard work. Or a normal amount of work, as it's quite easy.
 comments: true
 ---
