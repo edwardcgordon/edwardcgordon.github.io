@@ -1,4 +1,3 @@
-
 ---
 ---
 
@@ -20,7 +19,6 @@ $highlight_color: #ffeb3b;
 $link_color: #e91e63;
 $header_font: 'Roboto Slab', serif;
 $body_font: 'Roboto', serif;
-$code_background: #4d6571;
 
 /**************/
 /* BASE RULES */
@@ -163,23 +161,6 @@ img {
 .clearfix:after {
     clear: both;
 }
-
-/*********************/
-/* MD HIGHLIGHT      */
-/*********************/
-
-.highlight {
-    background-color: $code_background
-    padding: 20px 20px 20px 20px;
-    /* border: 1px solid #ddd; */
-    -moz-box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
-    /* -webkit-box-shadow: 3px 3px rgba(0, 0, 0, 0.1); */
-    /* box-shadow: 3px 3px rgba(0, 0, 0, 0.1); */
-    margin: 20px 0 20px 0;
-    /* overflow: scroll; */
-    border-radius: 0.5em;
-}
-
 
 /*********************/
 /* LAYOUT / SECTIONS */
