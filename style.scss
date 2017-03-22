@@ -11,7 +11,7 @@
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
-/* Variables     */
+/* Variables  */
 /**************/
 
 $sidebar: #4d6571;
@@ -20,7 +20,6 @@ $highlight_color: #ffeb3b;
 $link_color: #e91e63;
 $header_font: 'Roboto Slab', serif;
 $body_font: 'Roboto', serif;
-$code_background: #4d6571;
 
 /**************/
 /* BASE RULES */
@@ -169,7 +168,7 @@ img {
 /*********************/
 
 .highlight {
-    background-color: $code_background
+    background-color: #4d6571;
     padding: 20px 20px 20px 20px;
     /* border: 1px solid #ddd; */
     -moz-box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
