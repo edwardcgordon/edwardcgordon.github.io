@@ -29,7 +29,7 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: $body_font;
   color: $darkGray;
 }
@@ -87,7 +87,7 @@ p {
 a {
   color: $link_color;
   text-decoration: none;
-	cursor: pointer;
+  cursor: pointer;
   &:hover, &:active {
     color: $link_color;
     border-color: $link_color;
