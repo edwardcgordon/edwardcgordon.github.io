@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating a Responsive Image Gallery with 19 Lines of CSS
+title: Creating a Responsive Image Gallery with 19 Lines of CSS (and Flexbox)
 excerpt: We've all taken cool, brooding, black & white photos. But how do you make them brood even when they're viewed on mobile? Let me tell you about Flexbox...
 comments: true
 ---
@@ -9,7 +9,7 @@ Images are an ass to deal with. Unlike beautiful, reflowable text, you can't jus
 
 Fear not.
 
-By the end of this (shortish) blog post, you'll have the means to create a image gallery that can handle any device size and images of any dimension. With a few of your own styles, you can get a site to look like this in about 30 lines of CSS.
+By the end of this (shortish) blog post, you'll have the means to create a image gallery that can handle any device size and images of any dimension. With a few of your own styles, you can get a site to look like this in about 20 lines of CSS.
 
 ![final-project](/images/framed.png)
 
@@ -24,7 +24,7 @@ Without further ado let's get on.
 ## Writing Your Markup
 You have three major components in an image gallery:
 * The gallery container
-    * The container the image sits in
+    * The container the image sits in (also known as the frame)
         * The image itself
 
 This allows you to control each of the components individually if required. Here's how I wrote the markup.
@@ -67,7 +67,7 @@ Lastly, you need to style your image. Paint your canvas. You know. Make your pic
 
 <script src="https://gist.github.com/edwardcgordon/6068a26d26292730844c9d95e5dc71e5.js"></script>
 
-The key thing here is the height. You can use any unit to control height. I like `vh` because it's linked to the height of the device accessing your site. I used a unit rather than `height: auto` because working with huge photographs on a big desktop screen makes them uncomfortably large. Also, I was convinced that I was doing it properly, so I chose to tactically ignore it.
+The key thing here is the height. You can use any unit to control height. I like `vh` because it's linked to the height of the device accessing your site. I used a unit rather than `height: auto` because working with huge photographs on a big desktop screen makes them uncomfortably large. Also, I wasn't convinced that I was doing it properly, so I chose to tactically ignore it.
 
 Combined with your other styles, eventually you get images that look like this:
 
